@@ -5,6 +5,8 @@ import { routing, appRoutingProviders } from './app.routing';
 
 //formulario
 import { FormsModule } from '@angular/forms';
+//Servicios
+import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,8 +22,10 @@ import { RegisterComponent } from './components/register/register.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    //Importados
     routing,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     appRoutingProviders
